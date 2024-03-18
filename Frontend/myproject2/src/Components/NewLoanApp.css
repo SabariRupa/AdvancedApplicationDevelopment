@@ -1,0 +1,115 @@
+
+.sideapp
+{
+  margin-top: 0px;
+  display:flex;
+}
+.loan-form-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  margin-left: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 26px;
+}
+#naf 
+{
+  margin-top: 60px;
+  font-size: 20px;
+  margin-left: 220px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section {
+  margin-bottom: 30px;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-section input {
+  width: calc(30% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-section input[type="text"],
+.sub-section input[type="email"],
+.sub-section input[type="tel"],
+.sub-section input[type="number"],
+.sub-section select {
+  width: calc(30% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  position: absolute;
+  top: 1000px; /* Adjust top position as needed */
+  right: 150px; /* Adjust right position as needed */
+  padding: 10px 60px;
+  background-color: #0e7640;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+.declaration-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.declaration-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+.terms-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.terms-link label {
+  margin-left: 10px;
+}
+
+.terms-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.terms-link a:hover {
+  text-decoration: underline;
+}
+
+.personal-field input[type="text"],
+.personal-field input[type="email"],
+.personal-field input[type="tel"],
+.personal-field input[type="date"],
+.personal-field input[type="number"],
+.personal-field select {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+}

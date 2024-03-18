@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-
   return (
     <div className="nav">
       <header>
@@ -14,52 +12,29 @@ const Navbar = () => {
             <Link to="/">
               <img className="logo1" alt="logo" src="https://e7.pngegg.com/pngimages/727/712/png-clipart-sustainable-agriculture-research-conservation-agriculture-natural-resource-management-others-leaf-logo-thumbnail.png"/></Link>
           </div>
+
           <div className="logo-name"> 
-            <h2 className="name">Agri Tech</h2>
-          
+            <h2 className="lname">AgroLend</h2>
           </div>
-          
-          <div className="toggle">
-          </div>
-          <div className='links'>
-            <ul>
-              <li className='li-elements' >
-                <div onMouseEnter={() => setShowMenu(true)} onMouseLeave={() => setShowMenu(false)} className='services'>Services
-                <div className='menu-hover'>  {showMenu && (
-              <ul className="menu-list">
-                <li><Link to="/menu1">Menu 1</Link></li>
-                <li><Link to="/menu2">Menu 2</Link></li>
-                <li><Link to="/menu3">Menu 3</Link></li>
-              </ul>
-            )}</div>
-            </div>
-              </li>
-              <li className='li-elements'>
-                <div className='partners'>Partners</div>
-              </li>
-              
-              </ul>
-              </div>
-              
+
               <div className="top-bar">
                 <ul>
                   <li className="li-elements">
-                    <Link to="/faq">FAQ'S</Link>
+                    <Link to="/loans">Loans</Link>
                   </li>
                   <li className="li-elements">
-                    <Link to="/about">About</Link>
+                    <Link to="/about">Lenders</Link>
                   </li>
                   <li className="li-elements">
                     <Link to="/register">Register</Link>
                   </li>
-                  
                   <li className="li-elements">
                     <Link to="/login">Login</Link>
                   </li>
                 </ul>
           </div>
         </div>
-        <div className='socialIcons'></div>
+
       </header>
     </div>
   );
