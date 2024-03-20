@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-AgrolendApplication<agrolend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.aad.agrolend.AgrolendApplication",
+      "projectName": "agrolend",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
