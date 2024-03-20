@@ -1,0 +1,128 @@
+.prof {
+  display: flex;
+  margin-top: 0px;
+
+}
+.profile-container {
+  position: relative;
+  max-width: 850px;
+  height: auto;
+  margin: 0 auto;
+  margin-left: 390px;
+  padding: 40px;
+  padding-bottom: 0px;
+  margin-top: 15px;
+  background-color: #3cb74e25;
+  border-radius: 8px;
+  border-color: #132818;
+  
+  box-shadow: 0 10px 20px rgba(83, 176, 128, 0.5), 0 0 20px rgba(0, 0, 0, 0.1) inset; /* Added box shadow on top */
+
+}
+#useprof
+{
+  margin-top: 90px;
+  font-size: 25px;
+  margin-left: 350px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.profile-container::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(98, 213, 108, 0));
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 5px solid #d5ccccfb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.profile-fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-container h5{
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.profile-field {
+  padding: 5px;
+  padding-right: 10px;
+  flex: 1 1 50%;
+}
+
+.profile-field label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.profile-field div {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(251, 251, 251);
+  border: 0px solid grey;
+}
+
+.profile-field input 
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.profile-field input:focus {
+  outline: none;
+
+  border-color: #23913c;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.profile-actions button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-btn {
+  background-color: #23913c;
+  color: #fff;
+
+}
+
+.update-btn:hover {
+  background-color: #23913c;
+}
+
+.edit-btn {
+  background-color: #23913c;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}

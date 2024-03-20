@@ -1,8 +1,11 @@
 import React from 'react';
 import './Home.css';
+import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
+    <div>
     <div className="home-container">
        <div className="home-page">
         <h1 id="wel">"Growing your farm, nurturing your future – with our agricultural loans"</h1>
@@ -19,7 +22,7 @@ function Home() {
     Your Farming Ventures!
   </div>
 </div>
-        <button class="latest-btn">Get Started!!</button>
+        <Link to="/register"><button class="latest-btn">Get Started!!</button></Link>
         </div>
 
         <div className="box-container">
@@ -51,8 +54,9 @@ function Home() {
             </div>
           </div>
         </div>
-        
-      </div>
+        </div>
+        </div>
+        <Footer/>
     </div>
     
     

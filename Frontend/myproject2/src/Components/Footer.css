@@ -1,0 +1,146 @@
+.footer {
+  background: #00000025; 
+  color: #000; 
+  width: 100%;
+  position: absolute;
+  top:1950px;
+}
+
+.footer-content {
+ 
+  margin: auto;
+  width:100%;
+  max-width: 2000px;
+  padding: 20px 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.footer-logo i {
+  margin-right: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  width: calc(25% - 10px);
+}
+
+.footer-box .link_name {
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.footer-box .link_name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #000; 
+}
+
+.footer-box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+.footer-box li a {
+  color: #000; 
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.footer-box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  background: #fff; 
+  border-radius: 4px;
+  padding: 0 15px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.input-box input::placeholder {
+  color: #afafb6;
+  font-size: 16px;
+}
+
+.input-box input[type="button"] {
+  background: #000; 
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  background: #000; 
+}
+
+.bottom_text {
+  max-width: 100%;
+  margin: auto;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom_text span,
+.bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff; 
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-box {
+    width: calc(100% - 10px);
+  }
+}

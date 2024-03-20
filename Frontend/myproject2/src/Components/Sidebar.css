@@ -4,7 +4,7 @@
 }
 .sidebar {
   width: 200px;
-  background-color: #a3b6a3;
+  background-color: #3cb74e25;
   padding: 20px;
   margin-top:2px;
   height: 100vh;
@@ -38,11 +38,12 @@
 .sidebar-menu li {
   margin-bottom: 10px;
   padding: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .sidebar-menu li a {
   text-decoration: none;
-  color: #333;
+  color: #111010;
 }
 
 .sidebar-menu li a:hover {

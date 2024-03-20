@@ -18,7 +18,7 @@
 {
   margin-top: 60px;
   font-size: 20px;
-  margin-left: 220px;
+  margin-left: 210px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -49,8 +49,8 @@
 
 .submit-btn {
   position: absolute;
-  top: 1000px; /* Adjust top position as needed */
-  right: 150px; /* Adjust right position as needed */
+  top: 950px; 
+  right: 150px; 
   padding: 10px 60px;
   background-color: #0e7640;
   color: #fff;

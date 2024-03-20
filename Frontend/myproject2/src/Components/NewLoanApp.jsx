@@ -3,6 +3,7 @@
 import React from 'react';
 import './NewLoanApp.css';
 import Sidebar from './Sidebar';
+import { Link } from 'react-router-dom';
 
 const NewLoanApp = () => {
     return (
@@ -12,7 +13,7 @@ const NewLoanApp = () => {
       <h2 id="naf">New Application Form</h2>
       <div className="loan-form-container">
       <div className="section personal-info">
-          <h2>Personal Information</h2>
+          <h2>Personal Information </h2>
           <div className="sub-section">
               <div className="personal-field">
                   <input type="text" placeholder="Name" />
@@ -44,7 +45,7 @@ const NewLoanApp = () => {
       </div>
 
       <div className="section documents">
-          <h2>Documents</h2>
+          <h2>Documents :</h2>
           <div className="sub-section">
               <input type="text" placeholder="Aadhaar Number" />
               <input type="text" placeholder="PAN Number" />
@@ -53,7 +54,8 @@ const NewLoanApp = () => {
       </div>
 
       <div className="section loan-details">
-          <h2>Loan Details</h2>
+          <h2>Loan Details :</h2>
+          <br/><br/>
           <div className="sub-section">
               <input type="number" placeholder="Loan Amount" />
               <input type="text" placeholder="Loan Type" />
@@ -62,7 +64,7 @@ const NewLoanApp = () => {
       </div>
 
       <div className="section bank-details">
-          <h2>Bank Details</h2>
+          <h2>Bank Details :</h2>
           <div className="sub-section">
               <input type="text" placeholder="Branch Name" />
               <input type="text" placeholder="Account Number" />
@@ -71,7 +73,7 @@ const NewLoanApp = () => {
       </div>
 
       <div className="section other-info">
-          <h2>Other Information</h2>
+          <h2>Other Information :</h2>
           <div className="sub-section">
               <input type="text" placeholder="Father or Husband Name" />
               <input type="text" placeholder="Category" />
@@ -114,7 +116,7 @@ const NewLoanApp = () => {
 
 
 
-      <button className="submit-btn">Submit Application</button>
+     <Link to='/documents'> <button className="submit-btn">Submit Application</button></Link>
   </div>
         </div>
     );

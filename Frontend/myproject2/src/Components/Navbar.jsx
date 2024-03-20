@@ -20,7 +20,7 @@ const Navbar = () => {
               <div className="top-bar">
                 <ul>
                   <li className="li-elements">
-                    <Link to="/loans">Loans</Link>
+                    <Link to="/loanCalculator">Emi Calculator</Link>
                   </li>
                   <li className="li-elements">
                     <Link to="/about">Lenders</Link>

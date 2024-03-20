@@ -1,6 +1,6 @@
 import React from 'react';
 import './login.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Signup = () => {
   const nav=useNavigate();
   const navlog=()=>{
@@ -15,9 +15,9 @@ const Signup = () => {
               <h1>SIGNUP</h1>
               <input type="text" placeholder="Name" /><br />
               <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" /><br />
-              <input type="text" placeholder="Mobile Number" /><br />
-              <button>Register</button>
+              <input type="password" placeholder="Password" /><br/>
+              <input type="text" placeholder="Mobile Number" /><br/>
+             <button onClick={navlog}>Register</button>
               <p>Already have an Account &gt;&gt;&gt;</p>
               
          </div>
