@@ -14,7 +14,8 @@ import com.aad.agrolend.Service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-public class UserController {
+public class UserController
+ {
 
     @Autowired
     private UserService userService;

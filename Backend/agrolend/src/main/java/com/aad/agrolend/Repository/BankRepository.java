@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.aad.agrolend.Model.Bank;
 
 @Repository
-public interface BankRepository extends JpaRepository<Bank, Long> {
+public interface BankRepository extends JpaRepository<Bank, Long>
+{
     
 }

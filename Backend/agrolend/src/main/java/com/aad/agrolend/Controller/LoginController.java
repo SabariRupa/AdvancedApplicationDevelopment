@@ -12,7 +12,8 @@ import com.aad.agrolend.Service.UserService;
 
 
 @RestController
-public class LoginController {
+public class LoginController
+ {
 
     @Autowired
     private UserService userService;
