@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const isLoggedIn=localStorage.getItem('isLoggedIn')==='true';
+  const email=localStorage.getItem('email');
   return (
     <div className="nav">
       <header>
@@ -25,12 +27,22 @@ const Navbar = () => {
                   <li className="li-elements">
                     <Link to="/about">Lenders</Link>
                   </li>
+                  {isLoggedIn?
+                    <>   
                   <li className="li-elements">
+                  <Link to='/profile'>{email}</Link>
+                  </li>
+                    </> :<>
+                    <li className="li-elements">
                     <Link to="/register">Register</Link>
                   </li>
                   <li className="li-elements">
                     <Link to="/login">Login</Link>
                   </li>
+                    </>
+
+                  }
+
                 </ul>
           </div>
         </div>

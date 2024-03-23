@@ -1,26 +1,41 @@
 import React, { useState } from 'react';
 import './login.css';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
+import { jwtDecode } from 'jwt-decode';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    if (username === 'admin' && password === 'admin123') {
-      localStorage.setItem('role', 'admin');
-      navigate("/adminDash");
-    } else if(username==='user'&& password==='user123') {
-      localStorage.setItem('role', 'user');
-      navigate("/userdashb");
-    }
-    else if(username.length>0&&password.length>0){
-      alert("Wrong Credentials")
-    }
-    else{
-      alert("Enter All Details")
-    }
+  const handleLogin = async(e) => {
+    e.preventDefault()
+    console.log(username);
+    console.log(password);
+      try{
+        const response=await axios.post('http://localhost:8080/api/auth/authenticate',{email:username,password});
+        console.log(response.data)
+        const decode=jwtDecode(response.data);
+        console.log(decode)
+        localStorage.setItem("role",decode.role)
+        localStorage.setItem("userId",decode.id)
+        localStorage.setItem("exp",decode.exp)
+        localStorage.setItem("email",decode.sub)
+        localStorage.setItem("isLoggedIn",true)
+        if(localStorage.getItem("role")==="user"){
+          navigate("/userdashb")
+        }
+       else if(localStorage.getItem("role")==="admin"){
+          navigate("/adminDash")
+        }
+        else {
+          alert("Something went wrong")
+        }
+      }
+      catch(error){
+        alert("Wrong Credentials....Please Try again")
+        console.log(error)
+      }
   };
 
   const handleRegister = () => {

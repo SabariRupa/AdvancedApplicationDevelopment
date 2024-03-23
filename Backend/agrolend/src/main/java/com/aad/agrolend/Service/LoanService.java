@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class LoanService 
-{
+public class LoanService {
 
     @Autowired
     private LoanRepository loanRepository;

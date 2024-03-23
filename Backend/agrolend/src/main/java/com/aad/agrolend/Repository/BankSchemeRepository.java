@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.aad.agrolend.Model.BankScheme;
-
 @Repository
 public interface BankSchemeRepository extends JpaRepository<BankScheme, Long> {
      @Query("SELECT bs FROM BankScheme bs JOIN FETCH bs.bank")
