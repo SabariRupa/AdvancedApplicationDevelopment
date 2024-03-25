@@ -24,7 +24,6 @@ public class BankScheme {
     private Long id;
     private Long bankid;
     private String schemeName;
-    
     private double interestRate;
     
     private int maximumLoanAmount;

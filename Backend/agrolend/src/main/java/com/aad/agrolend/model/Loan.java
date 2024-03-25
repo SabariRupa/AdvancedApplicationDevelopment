@@ -17,9 +17,7 @@ public class Loan {
      @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
     private Long userId; 
-    
     private Long schemeId; 
     private Long bankid;
     private String status;
@@ -37,6 +35,5 @@ public class Loan {
     private String landSize;
     
     private String requiredMachinery;
-    
     private double dueAmount; 
 }

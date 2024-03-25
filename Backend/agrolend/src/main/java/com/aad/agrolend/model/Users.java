@@ -23,7 +23,6 @@ public class Users {
     private String role;
     private boolean isFilled;
     public Object map(Object object) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'map'");
     }
 }

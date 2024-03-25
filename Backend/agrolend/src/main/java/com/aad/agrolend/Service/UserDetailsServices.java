@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserDetailsServices {
+public class UserDetailsServices
+ {
 
     private final UserDetailsRepository userDetailsRepository;
 
@@ -58,7 +59,6 @@ public class UserDetailsServices {
         if (user == null) {
             throw new IllegalArgumentException("User with email " + email + " not found");
         }
-        
         return user.get();
     }
 }

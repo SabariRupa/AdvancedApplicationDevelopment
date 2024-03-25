@@ -25,19 +25,15 @@ public class OpenApiConfig {
                                 .version("0.1")
                                 .description("swagger configuration testing.");
 
-                // Define JWT security scheme
                 SecurityScheme securityScheme = new SecurityScheme()
                                 .type(SecurityScheme.Type.HTTP)
                                 .scheme("bearer")
                                 .bearerFormat("JWT");
 
-                // Add the JWT security scheme to the components
                 Components components = new Components().addSecuritySchemes("bearerAuth", securityScheme);
 
-                // Add security requirement with JWT authentication
                 SecurityRequirement securityRequirement = new SecurityRequirement().addList("bearerAuth");
 
-                // Create the OpenAPI object with components and security requirements
                 return new OpenAPI()
                                 .info(info)
                                 .servers(Arrays.asList(server))

@@ -60,7 +60,7 @@ public class UserService {
                 .map(existingUser -> {
                     existingUser.setName(user.getName());
                     existingUser.setEmail(user.getEmail());
-                    existingUser.setPassword(user.getPassword());
+                    existingUser.setPassword(passwordEncoder.encode(user.getPassword()));
                     existingUser.setFilled(user.isFilled());
 
                     userRepo.save(existingUser);

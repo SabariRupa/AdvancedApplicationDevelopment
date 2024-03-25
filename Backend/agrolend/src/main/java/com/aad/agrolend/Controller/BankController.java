@@ -33,7 +33,8 @@ public class BankController {
 
     @PutMapping("/{id}")
     public ResponseEntity<String> updateBank(@PathVariable Long id, @RequestBody Bank updatedBank) {
-        try {
+        try 
+        {
             bankService.updateBank(id, updatedBank);
             return ResponseEntity.ok("Bank updated successfully.");
         } catch (RuntimeException e) {
